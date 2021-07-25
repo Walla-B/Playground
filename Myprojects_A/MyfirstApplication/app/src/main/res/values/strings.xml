@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IDEALCITY</string>
+    <string name="testText">TextView</string>
+    <string name="button">Button</string>
+    <string name="rlmenubutton">RLmenubutton</string>
+    <string name="topmenubar">topmenubar</string>
+</resources>
