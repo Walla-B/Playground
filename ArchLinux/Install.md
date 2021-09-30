@@ -9,6 +9,24 @@
 1. Windows에서 디스크 관리 > 디스크 0의 볼륨을 축소한다.
 2. 최소 10기가정도의 공간을 축소해 할당되지 않은 파티션을 만든다.
 
+> GPT vs MBR 차이 이해하기.
+>
+>> GPT : GUID Partition Table
+>> 
+>> MBR : Master Boot Record
+> 
+> GPT가 조금 최신의 하드디스크 구성 방식이며, MBR은 보통 2TB 미만의 하드디스크에서 사용되는 구조이다.
+> 
+> MBR과 GPT 파티션 구성 방식의 가장 큰 차이점은 주 파티션의 최대 가수이며, MBR은 최대 4개, 
+> 
+> GPT는 최대 128개라고는 하지만 명확한 제한은 없는 것으로 보인다.
+> 
+> 여기서 중요한 점은, Windows가 Primary partition을 세개, Linux 또한 Primary partition을 세개
+>
+> 차지하므로, Windows가 이미 깔려있는 MBR 형식의 하드디스크에는 Linux를 이용한 멀티부팅이 불가능하다!
+>
+> MBR형식을 GPT형식으로 바꿀 수 있으나, 이는 디스크 포맷을 필요로 하므로 포맷을 할 여분의 컴퓨터가 필요하다.
+>
 디스크 이미지 파일 다운받기
 ---
 [ArchLinux](https://archlinux.org/download/) 사이트에서 디스크 이미지 파일(.iso) 파일을 다운받는다. 대략 600MB 정도.
